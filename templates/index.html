@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+        <br>
+        <h2>Pokédex </h2>
+        
+        <!-- Cursor from https://www.cursor.cc/?action=icon&file_id=152793 -->
+        <style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAMAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAA9/8AAAAAAP///wAAAP8AAIj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERESQhEREREREREREREREREREUERERERERERERERERERERRERBERERERERERERERERFERAAAIRERERERERERERFBREEQABEREREREREREREUQUREQQARERERERERERERFEFERBRBEREREREREREREUQRFEREREQRERERERERERFBERFEREREQRERERERERERQRERRERBFEQRERERERERQAMRERREQRREEREREREREUBDEREUREEkRBERERERERFEMxEREUREREQREREREREREzERERFERERBERERERERERMxERERFEREERERERERERERMRERERFERBERERERERERERERERERERERERERERERH///////////////////////////////////////////////////////////////////////////8f///+D////gf///wA///4AH//8AD//+AA///AAH//wAA//8YAH/+HAA//A4AP/wOAD/8DwA//h8Af/4fgP//H8D//7/h//w=='), auto; }</style>
+        <br>
+        <br>
+        <!-- Credit for sound button https://stackoverflow.com/questions/29567580/play-a-beep-sound-on-button-click -->
+        <audio id="audio" src="https://www.mboxdrive.com/pokemon-a-button.mp3"></audio>
+        <script>
+            function searchButtonMusic(){
+                document.getElementById("audio").play();
+            }
+        </script>
+
+        <div class="search-align">
+            <!-- Form for user to input Pokemon to search -->    
+            <form action="/" method = "POST">
+                <input type="text" placeholder="Search" name="search" id="search-bar">
+                <!-- Credit for music: https://www.soundboardguy.com/sounds/pokemon-a-button/ -->
+                <input type="image" onclick="searchButtonMusic()" src="https://pngimg.com/uploads/pokeball/pokeball_PNG8.png" id="poke-submit" value="Submit"/>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- Random Pokemon button -->
+        <form action ="/random" method = "POST" name="random_search">
+            <button type="submit" class="button">Give me a random Pokemon! </button>
+        </form>
+    
+{% endblock %}

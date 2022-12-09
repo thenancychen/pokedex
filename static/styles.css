@@ -1,0 +1,178 @@
+body {
+	width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 600px;
+	}
+
+/* Font credit - https://www.cufonfonts.com/font/pokemon-hollow */
+
+@font-face {
+    font-family: 'Pokemon Hollow Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pokemon Hollow Normal'), url('/style/Pokemon Hollow.woff') format('woff');
+    }
+    
+
+@font-face {
+	font-family: 'Pokemon Solid Normal';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Pokemon Solid Normal'), url('/style/Pokemon Solid.woff') format('woff');
+	}
+
+h1 {
+	color: #BD3944;
+	font-size: 50px;
+	font-family: 'Pokemon Solid Normal';
+	letter-spacing: 2px;
+	}
+
+h2 {
+	font-family: 'Pokemon Solid Normal';
+	font-size: 80px;
+	color: #FFDE00;
+	text-shadow: 10px 10px #3B4CCA;
+	letter-space: 2px;
+	}
+
+h3 {
+	color: #3B4CCA;
+	font-size: 50px;
+	font-family: 'Pokemon Solid Normal';
+	}
+
+h4 {
+	color: #FFF;
+	font-size: 50px;
+	font-family: 'Pokemon Solid Normal';
+	letter-spacing: 2px;
+	}
+p {
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+	}
+
+a {
+	color: #000;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+
+	}
+
+a:hover { 
+
+	color: #BD3944;
+	font-size: 13px;
+	text-transform: lowercase;
+	letter-spacing: 5px;
+	}   
+
+.button {
+	background-color: #FFF;
+	border: solid;
+	color: #3B4CCA;
+	padding: 5px 15px;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 19px;
+	}
+
+#search-bar {
+	border-radius: 25px;
+	height: 70px;
+	width: 200px;
+	display: inline-block;
+	}
+
+.search-align {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+#poke-submit {
+	width: 70px;
+	height: 70px;
+	border: 0;
+	}
+
+#outer-section {
+	background-color: #CC0000;
+	width: 900px;
+    min-height: 1000px;
+	position: absolute;
+	border-radius: 25px 25px;
+	top: 200px;
+	left: 300px;
+	right: 200px;
+	margin-bottom: 100px;
+	}
+
+#name-section {
+	background-color: #FFF;
+	position: relative;
+	border-radius: 25px;
+	width: 40%;
+	height: 125px;
+	top: 60px;
+	left: 270px;
+	}	
+
+#inner-section {
+	position: relative;
+	background-color: #FFF;
+	border-radius: 25px;
+    width: 75%;
+    height: 47%;
+    margin: auto;
+	margin-top: 150px;
+	padding-top: 25px;
+	margin-bottom: 100px;
+
+}
+
+#type-section {
+	position: relative;
+	background-color: #FFF;
+	border-radius: 25px;
+	width: 50%;
+	min-height: 175px; 
+	left: 220px;
+	padding-top: 20px;
+	margin-bottom: 200px;
+
+}
+
+#random-section {
+	position: absolute;
+	background-color: #3B4CCA;
+	border-radius: 50px;
+	width: 50%;
+    min-height: 45%;
+    margin: auto;
+	left: 400px;
+	margin-top: 50px;
+	padding-top: 25px;
+}
+
+
+.footer {
+
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #FFF;
+	text-align: center;
+	margin-top: 1000px;
+	}

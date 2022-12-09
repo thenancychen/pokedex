@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <h1> {{ top }} </h1>
+    <img alt="{{ top }}" class="border img-fluid" src="https://c.tenor.com/lmA7VALYIAsAAAAC/sad-pikachu.gif{{ top | urlencode }}/{{ bottom | urlencode }}&width=400">
+    <br>
+    <br>
+    <h1> {{ bottom }}</h1>
+
+    <!-- Music: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y -->
+    <audio src="https://www.mboxdrive.com/110%20Friends%20Theme%20Friends%20Forever.mp3" autoplay loop></audio>
+{% endblock %}
